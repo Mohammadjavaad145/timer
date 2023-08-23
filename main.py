@@ -136,7 +136,7 @@ def check_set_timer():
     finally:
         root.after(500, check_set_timer)
 
-list_of_ent = ["hour", "min", "sec"]
+list_of_ent = [hour, min, sec]
 for num, ent in enumerate(list_of_ent):
     tk.Entry(
     root,
@@ -147,35 +147,6 @@ for num, ent in enumerate(list_of_ent):
     width= 2,
     font= "arial 50",
     ).place(x=(40 * (num * 3 + 1)), y=160)
-# ery_hour = tk.Entry(
-#     root,
-#     textvariable= hour,
-#     bg= "#000",
-#     fg= "#FAF7F4",
-#     bd= 0,
-#     width= 2,
-#     font= "arial 50",
-# )
-
-# ery_min = tk.Entry(
-#     root,
-#     textvariable= min,
-#     bg= "#000",
-#     fg= "#FAF7F4",
-#     bd= 0,
-#     width= 2,
-#     font= "arial 50",
-# )
-
-# ery_sec = tk.Entry(
-#     root,
-#     textvariable= sec,
-#     bg= "#000",
-#     fg= "#FAF7F4",
-#     bd= 0,
-#     width= 2,
-#     font= "arial 50",
-# )
 
 lbl_heading_timer = tk.Label(
     root,
@@ -290,9 +261,6 @@ check_set_timer()
 lbl_heading.place(x=140, y=10)
 lbl_clock.place(x=70, y=70)
 lbl_heading_timer.place(x=60, y=140)
-# ery_hour.place(x=40, y=160)
-# ery_min.place(x=160, y=160)
-# ery_sec.place(x=280, y=160)
 btn_start.place(x=70, y=600)
 btn_reset.place(x=220, y=600)
 btn_set_5_m.place(x=25, y=300)
